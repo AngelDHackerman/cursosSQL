@@ -54,3 +54,16 @@ CREATE TABLE STUDENT_COURSES (
   FOREIGN KEY (STUDENTID) REFERENCES STUDENTS(STUDENTID),
   FOREIGN KEY (COURSEID) REFERENCES COURSES(COURSEID)
 );
+
+-- cambiando la tabla students 
+
+CREATE SEQUENCE students_studentid_seq;
+
+SELECT * FROM pg_sequences WHERE schemaname = 'public';
+
+-- ALTER TABLE students ALTER COLUMN studentid DROP DEFAULT;
+-- ALTER TABLE students ALTER COLUMN studentid SET DEFAULT nextval('students_studentid_seq');
+
+-- CREATE SEQUENCE courses_courseid_seq;
+-- ALTER TABLE courses ALTER COLUMN courseid DROP DEFAULT;
+-- ALTER TABLE courses ALTER COLUMN courseid SET DEFAULT nextval('courses_courseid_seq');

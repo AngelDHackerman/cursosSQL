@@ -9,3 +9,7 @@
 
 ALTER SEQUENCE students_studentid_seq RESTART WITH 1;
 ALTER SEQUENCE courses_courseid_seq RESTART WITH 1;
+
+UPDATE students
+SET firstname = 'Helen'
+WHERE firstname = 'Eva';

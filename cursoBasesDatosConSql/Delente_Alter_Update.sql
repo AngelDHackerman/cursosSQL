@@ -13,3 +13,8 @@ ALTER SEQUENCE courses_courseid_seq RESTART WITH 1;
 UPDATE students
 SET firstname = 'Helen'
 WHERE firstname = 'Eva';
+
+-- Agregando la columna salarios a los instructores
+-- ALTER TABLE instructors
+-- ADD COLUMN salary INTEGER;
+

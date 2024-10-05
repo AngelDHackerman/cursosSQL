@@ -64,3 +64,9 @@ INSERT INTO STUDENT_COURSES (STUDENTID, COURSEID) VALUES
 (18, 1), (18, 4), -- Ruby inscrita en Espanol e Ingles
 (19, 3), (19, 5), -- Sam inscrito en Aleman y Portugues
 (20, 2), (20, 4), (20, 5); -- Tina inscrita en Espanol Avanzado, Ingles y Portugues
+
+-- Agregar salarios a cada instructor de forma aleatoria
+
+UPDATE instructors 
+SET salary = 5000 + FLOOR(RANDOM()* 2000)
+

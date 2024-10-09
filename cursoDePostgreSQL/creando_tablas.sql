@@ -3,3 +3,7 @@ CREATE TABLE viajero (
   nombre varchar(255),
   fecha_registro DATE
 );
+
+SELECT version();
+
+SHOW config_file;
